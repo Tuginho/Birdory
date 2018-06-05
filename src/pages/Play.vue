@@ -15,11 +15,12 @@
           </div>
         </div>
       </div>
+    </div>
 
+    <div class="flex-container">
       <v-ons-button style="margin: 6px; width: 350px; text-align: center; background-color: green" >Score: {{ roundScore }}</v-ons-button>
       <v-ons-button modifier="cta" style="margin: 6px; width: 350px; text-align: center; background-color: darkred" >False: {{ falseRoundScore }}</v-ons-button>
       <v-ons-button modifier="cta" style="margin: 6px; width: 350px; text-align: center" @click="nextBirds()" >Next Birds</v-ons-button>
-
     </div>
   </v-ons-page>
 </template>
@@ -131,18 +132,14 @@
   .card {
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     transition: 0.3s;
-    width: 40%;
     border-radius: 5px;
-    min-height: 250px;
-    min-width: 250px;
     max-height: 250px;
     max-width: 250px;
   }
 
   .card:active {
-    background-color: yellow;
+    background-color: lightskyblue;
   }
-
 
   .card:hover {
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
@@ -157,7 +154,13 @@
 
   .container {
     text-align: center;
-    padding: 2px 16px;
+    padding: 2px 8px;
+  }
+
+  .flex-container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
   }
 
 
