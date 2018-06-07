@@ -1,5 +1,5 @@
-import 'onsenui/css/onsenui.css'; // Onsen UI basic CSS
 import './onsen-css-components.css'; // Onsen UI CSS components source for custom themes (requires cssnext)
+import 'onsenui/css/onsenui.css';
 
 import Vue from 'vue';
 import Vuex from 'vuex';

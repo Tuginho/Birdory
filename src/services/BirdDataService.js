@@ -1,9 +1,8 @@
 import axios from 'axios';
 
 let birds = [];
-const EUROPEANA_API_KEY = ""; // Insert API Key here
 
-let europeanaUrl = "https://www.europeana.eu/api/v2/search.json?wskey=" + EUROPEANA_API_KEY + "&query=Tierstimmenarchiv&reusability=open&profile=minimal";
+let europeanaUrl = "https://www.europeana.eu/api/v2/search.json?wskey=" + process.env.EUROPEANA_API_KEY + "&query=Tierstimmenarchiv&reusability=open&profile=minimal";
 let dbPediaUrl = "https://dbpedia.org/sparql?default-graph-uri=http://dbpedia.org";
 
 export default class BirdDataService {

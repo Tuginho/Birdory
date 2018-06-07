@@ -2,7 +2,7 @@
 
 :root {
   /* variables for iOS components */
-  --background-color: #efeff4;
+  --background-color: #429488;
   --text-color: #1f1f21;
   --sub-text-color: #999;
   --highlight-color: #0076ff;
@@ -47,7 +47,7 @@
   --fab-active-background-color: rgba(0, 118, 255, 0.7);
 
   /* variables for Material Design components */
-  --material-background-color: #eceff1;
+  --material-background-color: #429488;
   --material-notification-background-color: #e91e63;
   --material-switch-active-thumb-color: #37474f;
   --material-switch-inactive-thumb-color: #f1f1f1;

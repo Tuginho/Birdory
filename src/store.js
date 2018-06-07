@@ -1,20 +1,16 @@
 export default {
   modules: {
+
     highscore: {
+      strict: true,
+      namespaced: true,
       state: {
         score: 0,
-        falseAnswer: 0
       },
       mutations: {
         updateScore(state, payload) {
           state.score = state.score + payload;
-        },
-        updateFalse(state, payload) {
-          state.falseAnswer = state.falseAnswer + payload;
-        },
-        push(state, page) {
-          state.stack.push(page);
-        },
+        }
       }
     },
 
