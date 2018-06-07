@@ -1,6 +1,10 @@
-# birdory
+# Birdory
 
-> A Vue.js project
+> A memory game with bird voices and pictures.
+
+## Config
+
+Copy config/\*.env.example.js files, name it config/\*.env.js and fill in the EUROPEANA_API_KEY
 
 ## Build Setup
 
