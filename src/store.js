@@ -11,7 +11,7 @@ export default {
       },
       mutations: {
         updateScore(state, payload) {
-          state.score = state.score + payload;
+          state.score = payload;
         }
       }
     },

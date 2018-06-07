@@ -86,7 +86,7 @@
       },
       checkAnswer: function (bird) {
         if (bird.name === this.rightBird.name) {
-          console.log('Right!');
+          this.showTip('Correct! :)');
 
           // Update Scoring
           this.roundScore = this.roundScore + 1;
