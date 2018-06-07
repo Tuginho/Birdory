@@ -7,7 +7,7 @@
     <div class="flex-container">
         <div class="card" v-for="page of pages" :key="page.label" @click="push(page.component, page.label)">
           <div class="container">
-            <h4 id="title"><b>{{ page.title }}</b></h4>
+            {{ page.title }}
           </div>
         </div>
     </div>
@@ -81,10 +81,6 @@
     font-size: 4vw;
   }
 
-  #title {
-    font-size: 4vw;
-  }
-
   .flex-container {
     display: flex;
     align-items: center;
@@ -95,6 +91,7 @@
     line-height: normal;
     display: inline-block;
     vertical-align: middle;
+    font-size: 4vw;
   }
 
 </style>

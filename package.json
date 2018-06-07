@@ -1,8 +1,12 @@
 {
   "name": "birdory",
   "version": "1.0.0",
-  "description": "A Vue.js project",
-  "author": "",
+  "description": "A memory game with bird voices",
+  "author": "Tugay Yentur <ty002@hdm-stuttgart.de>, arolin Guempel <carolin.guempel@stud.htwk-leipzig.de>",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/Tuginho/Birdory.git"
+  },
   "scripts": {
     "dev": "node build/dev-server.js",
     "start": "node build/dev-server.js",
@@ -15,7 +19,8 @@
     "onsenui": "^2.10.1",
     "vue": "^2.5.2",
     "vue-onsenui": "^2.6.0",
-    "vuex": "^3.0.1"
+    "vuex": "^3.0.1",
+    "vuex-persistedstate": "^2.5.4"
   },
   "devDependencies": {
     "autoprefixer": "^7.1.5",
