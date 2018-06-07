@@ -69,7 +69,7 @@ export default class BirdDataService {
                 foundBirds.push(rawBird.binomial);
                 if (rawBird.binomial === dbPediaResponse.data.results.bindings[0].binomial.value) {
                   rawBird.name = dbPediaResponse.data.results.bindings[0].name.value;
-                  rawBird.image_url = dbPediaResponse.data.results.bindings[0].image.value;
+                  rawBird.image_url = dbPediaResponse.data.results.bindings[0].image.value.replace("http://", "https://");
                   resultBirds.push(rawBird);
                 }
               }
