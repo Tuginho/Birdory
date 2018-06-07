@@ -104,15 +104,10 @@ const webpackConfig = merge(baseWebpackConfig, {
       filename: 'service-worker.js',
       staticFileGlobs: ['dist/**/*.{js,html,css}'],
       minify: true,
-      stripPrefix: 'dist/',
-      runtimeCaching: [
-          {
-              urlPattern: /^http:\/\/commons\.wikimedia\.org\/wiki\/Special:FilePath\/.+/,
-              handler: 'cacheFirst'
-          }]
+      stripPrefix: 'dist/'
     })
   ]
-});
+})
 
 if (config.build.productionGzip) {
   const CompressionWebpackPlugin = require('compression-webpack-plugin')

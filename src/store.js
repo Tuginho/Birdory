@@ -1,6 +1,8 @@
-export default {
-  modules: {
+import createPersistedState from "vuex-persistedstate";
 
+export default {
+  plugins: [createPersistedState()],
+  modules: {
     highscore: {
       strict: true,
       namespaced: true,

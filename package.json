@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "A memory game with bird voices",
   "author": "Tugay Yentur <ty002@hdm-stuttgart.de>, arolin Guempel <carolin.guempel@stud.htwk-leipzig.de>",
+  "license": "MIT",
   "repository": {
     "type": "git",
     "url": "git://github.com/Tuginho/Birdory.git"
