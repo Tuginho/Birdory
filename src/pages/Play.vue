@@ -39,6 +39,7 @@
         birds: [],
         rightBird: [],
         roundScore: 0,
+        lastHighscore: this.$store.state.highscore.score,
         falseRoundScore: 0,
         correctAnswer: true,
         loading: true,
@@ -89,7 +90,9 @@
 
           // Update Scoring
           this.roundScore = this.roundScore + 1;
-          this.$store.commit('highscore/updateScore', 1);
+          if (this.roundScore > this.lastHighscore) {
+            this.$store.commit('highscore/updateScore', this.roundScore);
+          }
 
           this.sound.stop();
 
