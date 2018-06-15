@@ -40,7 +40,7 @@ export default class BirdDataService {
         if (!foundBirds.includes(bird.binomial)) {
           foundBirds.push(bird.binomial);
           // this has to be split in multiple requests, otherwise the request uri is too long
-          if (index % 50 !== 0) {
+          if (index % 30 !== 0) {
             binomials += "'" + bird.binomial + "' or "
           } else {
             binomials += "'" + bird.binomial + "'";
@@ -87,7 +87,7 @@ export default class BirdDataService {
       nextCursor = '*'
     }
     return axios
-      .get(europeanaUrl + "&cursor=" + nextCursor + "&rows=100")
+      .get(europeanaUrl + "&cursor=" + encodeURIComponent(nextCursor) + "&rows=100")
       .then( function (response) {
         response.data.items.forEach(function (item, index) {
           let titleParts = item.title[0].split(" ");
