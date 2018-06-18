@@ -2,7 +2,7 @@
   <v-ons-page>
     <custom-toolbar v-bind="toolbarInfo"></custom-toolbar>
 
-    <div class="page__content" style="text-align: center">
+    <div class="page_content" style=" margin: auto; max-width: 700px; text-align: center">
       <audio class="audioplayer" autoplay="true" :src="rightBird.voice_url" controls></audio>
 
       <div v-if="loading">
@@ -148,8 +148,15 @@
   }
 
   .flex-container {
+    display: -webkit-flex;
     display: flex;
+    -webkit-align-items: center;
+    align-items: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-flex-flow: column wrap;
     flex-flow: row wrap;
-    justify-content: space-around;
+    -webkit-align-content: center;
+    align-content: center;
   }
 </style>
